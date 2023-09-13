@@ -1,20 +1,24 @@
 name: baseflow_plugin_template
+publish_to: none
 description: A template for plugin examples
 version: 2.1.2
 repository: https://github.com/Baseflow/baseflow_plugin_template
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
-  flutter: ">=2.8.0"
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  url_launcher: ^6.1.5
+  url_launcher: 
+    git: https://github.com/kumsumit/url_launcher.git
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints:   
+    git: https://github.com/kumsumit/flutter_lints.git
 
 flutter:
   uses-material-design: true
